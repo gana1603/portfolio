@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morse Code Generator | Project Journal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(ellipse at 60% 40%, #221a36 0%, #181825 50%, #0a0a12 100%),
+                  linear-gradient(120deg, #221a36 60%, #181825 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+    .journal-container {
+      background: rgba(35, 41, 70, 0.8);
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 32px #23294655;
+      max-width: 700px;
+      width: 100%;
+      padding: 2rem 2rem 2.5rem 2rem;
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .journal-img {
+      width: 350px;
+      height: 200px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 2px 8px #23294633;
+      margin-bottom: 1.2rem;
+    }
+    .journal-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #a3a3ff;
+      margin-bottom: 1.2rem;
+      text-align: center;
+    }
+    .journal-content {
+      font-size: 1.1rem;
+      color: #d1d1e0;
+      line-height: 1.7;
+      text-align: left;
+      margin-bottom: 1.5rem;
+    }
+    .back-link {
+      color: #a3a3ff;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 1.5rem;
+      display: inline-block;
+      transition: color 0.2s;
+    }
+    .back-link:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .paper-link {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #a3a3ff;
+      color: #232946;
+      font-weight: 600;
+      padding: 0.3rem 1.1rem;
+      border-radius: 1rem;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.2s, color 0.2s;
+    }
+    .paper-link:hover {
+      background: #fff;
+      color: #232946;
+    }
+    .journal-link {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #a3a3ff;
+      color: #232946;
+      font-weight: 600;
+      padding: 0.3rem 1.1rem;
+      border-radius: 1rem;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.2s, color 0.2s;
+      margin-left: 1rem;
+    }
+    .journal-link:hover {
+      background: #fff;
+      color: #232946;
+    }
+    .back-arrow {
+      font-size: 2.2rem;
+      color: #a3a3ff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    .back-arrow:hover {
+      color: #fff;
+    }
+    .video-link {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #4b2996;
+      color: #fff;
+      font-weight: 600;
+      padding: 0.3rem 1.1rem;
+      border-radius: 1rem;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.2s, color 0.2s;
+    }
+    .video-link:hover {
+      background: #232946;
+      color: #fff;
+    }
+    @media (max-width: 600px) {
+      .back-arrow {
+        font-size: 1.7rem;
+      }
+      .journal-header {
+        flex-direction: column;
+        gap: 0.7rem;
+        align-items: flex-start;
+      }
+      .journal-img {
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="journal-container">
+    <div class="journal-header" style="display: flex; justify-content: flex-start; align-items: center; width: 100%;">
+      <a class="back-arrow" href="main.html" title="Back to Portfolio">&#8592;</a>
+    </div>
+    <img class="journal-img" src="images/project-2.jpeg" alt="Morse Code Generator Project Image" style="display: block; margin: 0 auto 1.2rem auto;">
+    <div class="journal-title">Morse Code Generator</div>
+    <div class="journal-content">
+      <p><em>The project works to generate Morse Code. It takes serial input from the user and converts it to morse code. In morse code each letter has predefined dots and dashes. We provide the input as letters and the output will be in the form of dots and dashes. The output is generated with beep sounds using a buzzer and the LED screen is used to display the message.
+      </em></p>
+      <a class="video-link" href="images/morse-code.mp4" target="_blank">View Video</a>
+    </div>
+
+  </div>
+</body>
+</html> 
